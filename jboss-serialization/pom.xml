@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>jboss</groupId>
+    <artifactId>jboss-serialization</artifactId>
+    <version>1.0.5.6e-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <log4j.version>2.13.3</log4j.version>
+        <slf4j.version>1.7.32</slf4j.version>
+        <trove.version>2.1.1</trove.version>
+    </properties>
+
+    <scm>
+        <connection>scm:hg:https://vno-hg.exigengroup.com/hg/eis-thirdparty</connection>
+        <developerConnection>scm:hg:https://vno-hg.exigengroup.com/hg/eis-thirdparty</developerConnection>
+        <url>https://vno-hg.exigengroup.com/hg/eis-thirdparty</url>
+        <tag>HEAD</tag>
+    </scm>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>trove</groupId>
+            <artifactId>trove</artifactId>
+            <version>${trove.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
